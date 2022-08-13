@@ -5,8 +5,9 @@ const ftoc = function(temp) {
   
   ans = temp - 32
   ans *= 5 / 9
-  
-  return ans.toFixed(1)
+  ans = Math.round(ans*10)/10
+
+  return ans
 };
 
 const ctof = function(temp) {
@@ -14,14 +15,15 @@ const ctof = function(temp) {
   var ans = 0
 
 
-  ans = temp * 5/9
+  ans = temp * 9/5
   ans += 32
+  ans = Math.round(ans * 10) / 10
 
-  return ans.toFixed(1)
+  return ans
 };
 
 console.log(ftoc(32));
-console.log(ctof(0));
+console.log(ctof(73.2));
 console.log(ftoc(100));
 
 // Do not edit below this line
