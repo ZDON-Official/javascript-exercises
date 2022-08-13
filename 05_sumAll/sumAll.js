@@ -3,7 +3,7 @@ const sumAll = function(num1, num2) {
     
     if(num1 < 0 || num2 < 0){ return 'ERROR'}
     if(Number.isInteger(num1) && Number.isInteger(num2)){ 
-        temp = num1
+        var temp = num1
         num1 = Math.min(num1, num2)
         num2 = Math.max(temp, num2)
         
@@ -16,6 +16,6 @@ const sumAll = function(num1, num2) {
     }
     return sum
 };
-console.log(sumAll(123,1))
+
 // Do not edit below this line
 module.exports = sumAll;
