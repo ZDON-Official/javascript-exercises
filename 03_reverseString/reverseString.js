@@ -1,11 +1,5 @@
 const reverseString = function(strings) {
-    rev = ''
-
-    var split = strings.split('')
-    split = split.reverse()
-    rev = split.join('')
-
-    return rev
+    return strings.split('').reverse().join('')
 };
 
 // Do not edit below this line
